@@ -1,9 +1,11 @@
 <template>
   <div class="max-w-[430px] mx-auto h-screen bg-red-500">
-    <div class="relative h-full flex flex-col p-4">
+    <div class="relative h-full">
       <NavBar />
-      <slot></slot>
-     <AppFooter />
+      <div class="flex flex-col p-4">
+        <slot></slot>
+      </div>
+      <AppFooter />
     </div>
   </div>
 </template>
